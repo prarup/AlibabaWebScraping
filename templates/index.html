@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <br><br><br><br>
+    <form action="{{ url_for('products')}}"method="post">
+        <div class="form-group text-left container" >
+
+            <div>
+                <label>Page no</label>
+                <select name="page_no" id="page_no">
+                    <option value="2">1 to 2</option>
+                    <option value="10">1 to 10</option>
+                    <option value="20">1 to 20</option>
+                    <option value="100">1 to 100</option>
+                </select>
+        
+          </div>
+
+    		<div>
+        <label>Choose category</label>
+        <select name="category" id="category">
+            <option value="Carpet">Carpet</option>
+            <option value="Rugs">Rugs</option>
+            <option value="Mat">Mat</option>
+            <option value="Tapestry">Tapestry</option>
+            <option value="home décor and furniture">home décor and furniture</option>
+                <option value="furniture">furniture</option>
+                    <option value="commercial furniture">commercial furniture</option>
+                        <option value="bar furniture">bar furniture</option>
+                            <option value="bar chairs">bar chairs</option>
+                            <option value="bar furniture sets">bar furniture sets</option>
+                            <option value="bar stools">bar stools</option>
+                            <option value="bar tables">bar tables</option>
+                            <option value="other bar furniture">other bar furniture</option>
+                        <option value="hospital furniture">hospital furniture</option>
+                            <option value="hospital cabinets">hospital cabinets</option>
+                            <option value="hospital chairs">hospital chairs</option>
+                            <option value="hospital tables">hospital tables</option>
+                            <option value="hospital trolleys">hospital trolleys</option>
+                            <option value="other hospital furniture">other hospital furniture</option>
+                        <option value="hotel furniture">hotel furniture</option>
+                            <option value="hotel bedroom sets">hotel bedroom sets</option>
+                            <option value="hotel beds">hotel beds</option>
+                            <option value="hotel chairs">hotel chairs</option>
+                            <option value="hotel sofas">hotel sofas</option>
+                            <option value="hotel tables">hotel tables</option>
+                            <option value="hotel trolley">hotel trolley</option>
+                            <option value="luggage racks">luggage racks</option>
+                            <option value="other hotel furniture">other hotel furniture</option>
+                        <option value="industrial chairs">industrial chairs</option>
+                        <option value="laboratory furniture">laboratory furniture</option>
+                        <option value="library furniture">library furniture</option>
+                        <option value="office furniture">office furniture</option>
+                            <option value="computer desks">computer desks</option>
+                            <option value="conference chairs">conference chairs</option>
+                            <option value="conference tables">conference tables</option>
+                            <option value="filing cabinets">filing cabinets</option>
+                            <option value="gaming chairs">gaming chairs</option>
+                            <option value="gaming tables">gaming tables</option>
+                            <option value="laptop stands">laptop stands</option>
+                            <option value="magazine racks">magazine racks</option>
+                            <option value="office chairs">office chairs</option>
+                            <option value="office desks">office desks</option>
+                            <option value="office partitions">office partitions</option>
+                            <option value="office pods">office pods</option>
+                            <option value="office sofas">office sofas</option>
+                            <option value="reception desks">reception desks</option>
+                        <option value="restaurant furniture">restaurant furniture</option>
+                            <option value="restaurant chairs">restaurant chairs</option>
+                            <option value="restaurant sets">restaurant sets</option>
+                            <option value="restaurant tables">restaurant tables</option>
+                        <option value="salon furniture">salon furniture</option>
+                            <option value="barber chairs">barber chairs</option>
+                            <option value="massage tables and beds">massage tables and beds</option>
+                            <option value="nail tables">nail tables</option>
+                            <option value="salon trolley">salon trolley</option>
+                            <option value="shampoo chair">shampoo chair</option>
+                        <option value="school furniture">school furniture</option>
+                            <option value="dormitory beds">dormitory beds</option>
+                            <option value="school chairs">school chairs</option>
+                            <option value="school desks">school desks</option>
+                            <option value="school sets">school sets</option>
+                        <option value="theater furniture">theater furniture</option>
+                        <option value="waiting chairs">waiting chairs</option>
+                    <option value="furniture accessories">furniture accessories</option>
+                        <option value="edge banding">edge banding</option>
+                        <option value="furniture covers">furniture covers</option>
+                        <option value="furniture foam">furniture foam</option>
+                        <option value="furniture pads">furniture pads</option>
+                    <option value="furniture hardware">furniture hardware</option>
+                        <option value="door catches and door closers">door catches and door closers</option>
+                        <option value="drawer slide">drawer slide</option>
+                        <option value="furniture bolts">furniture bolts</option>
+                        <option value="furniture casters">furniture casters</option>
+                        <option value="furniture handles and knobs">furniture handles and knobs</option>
+                        <option value="furniture hinges">furniture hinges</option>
+                        <option value="furniture locks">furniture locks</option>
+                        <option value="shelf supports">shelf supports</option>
+        </select>
+  </div>
+</div >
+<div class="container">
+    <button type="submit" class="btn btn-primary ">View</button>
+</div>
+    </form>
+    <div class="container ">
+        {{ json_dump }}
+    </div>
+</body>
+</html>
